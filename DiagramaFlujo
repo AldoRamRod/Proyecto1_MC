@@ -1,0 +1,40 @@
+Diagrama de flujo
+Inicio
+   │
+   ▼
+Configurar PIC16F887 y LCD
+   │
+   ▼
+Definir F(0) = 0, F(1) = 1
+   │
+   ▼
+Almacenar F(0) y F(1) en memoria
+   │
+   ▼
+i = 2
+   │
+   ▼
+While i ≤ 13
+   │
+   ▼
+F(n) = F(n-1) + F(n-2)
+   │
+   ▼
+Guardar en memoria
+   │
+   ▼
+Actualizar valores:
+F(n-2) ← F(n-1)
+F(n-1) ← F(n)
+   │
+   ▼
+Incrementar i
+   │
+   ▼
+Fin While
+   │
+   ▼
+Mostrar valores en LCD
+   │
+   ▼
+Fin
