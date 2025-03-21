@@ -4,12 +4,36 @@ INICIO
     fib[0] ← 0
     fib[1] ← 1
 
-    Para i desde 2 hasta 13 hacer
+    for i desde 2 hasta 13 hacer
         fib[i] ← fib[i-1] + fib[i-2]
-    Fin Para
+    end for
 
     Mostrar "Los primeros 14 términos de Fibonacci son:"
-    Para i desde 0 hasta 13 hacer
+    for i desde 0 hasta 13 hacer
         Mostrar fib[i]
-    Fin Para
-FIN
+    end for
+end
+
+USANDO C
+
+#include <stdio.h>
+
+int main() {
+    int fib[14]; // Definir un arreglo de tamaño 14
+    fib[0] = 0;  
+    fib[1] = 1;  
+
+    // Calcular los términos de Fibonacci
+    for (int i = 2; i < 14; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+    }
+
+    // Mostrar los resultados
+    printf("Los primeros 14 términos de la secuencia de Fibonacci son:\n");
+    for (int i = 0; i < 14; i++) {
+        printf("%d ", fib[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
