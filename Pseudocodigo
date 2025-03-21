@@ -1,0 +1,17 @@
+Pseudocódigo
+Inicio
+    Configurar el microcontrolador
+    Inicializar LCD
+    Definir F(0) = 0
+    Definir F(1) = 1
+    Guardar F(0) en memoria
+    Guardar F(1) en memoria
+
+    For i desde 2 hasta 13 hacer
+        F(n) = F(n-1) + F(n-2)
+        Guardar F(n) en memoria
+        Actualizar valores:
+            F(n-2) = F(n-1)
+            F(n-1) = F(n)
+    End For
+End
