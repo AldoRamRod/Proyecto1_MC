@@ -14,7 +14,7 @@ INICIO
     end for
 end
 
-USANDO C
+BASANDONOS EN UN USO DE C
 
 #include <stdio.h>
 
