@@ -1,7 +1,13 @@
 Pseudocódigo
 Inicio
+    Definir patrones de números
+
+    Separa número en unidades, decneas y centenas
+    Poner cada patrón en un display (7 segmentos cátodo común)
+    Definir puertos A, B y C como salida
+    Definir puerto D como entrada
+
     Configurar el microcontrolador
-    Inicializar LCD
     Definir F(0) = 0
     Definir F(1) = 1
     Guardar F(0) en memoria
@@ -13,5 +19,10 @@ Inicio
         Actualizar valores:
             F(n-2) = F(n-1)
             F(n-1) = F(n)
+
+    Desplegar por unidades
+    Desplegar por decenas
+    Desplegar por centenas
+
     End For
 End
