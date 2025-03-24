@@ -3,7 +3,7 @@ INICIO
     Definir PATRONES
 
     Mostrar:
-    Dividir número en uniaddes, centenas y decenas
+    Dividir número en unidades, centenas y decenas
 
     Definir fib[14] como un arreglo de tamaño 14
     fib[0] ← 0
@@ -13,7 +13,7 @@ INICIO
         fib[i] ← fib[i-1] + fib[i-2]
     end for
 
-    Configurar los puertos para mostrar números y leer entrada
+    Configurar los puertos para mostrar números siguiendo los PATRONES y leer entrada
 
     for i desde 0 hasta 13 hacer
         Mostrar fib[i]
