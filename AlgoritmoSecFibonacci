@@ -1,5 +1,10 @@
 Algoritmo de Fibonnacci
 INICIO
+    Definir PATRONES
+
+    Mostrar:
+    Dividir número en uniaddes, centenas y decenas
+
     Definir fib[14] como un arreglo de tamaño 14
     fib[0] ← 0
     fib[1] ← 1
@@ -8,32 +13,10 @@ INICIO
         fib[i] ← fib[i-1] + fib[i-2]
     end for
 
-    Mostrar "Los primeros 14 términos de Fibonacci son:"
+    Configurar los puertos para mostrar números y leer entrada
+
     for i desde 0 hasta 13 hacer
         Mostrar fib[i]
     end for
+
 end
-
-BASANDONOS EN UN USO DE C
-
-#include <stdio.h>
-
-int main() {
-    int fib[14]; // Definir un arreglo de tamaño 14
-    fib[0] = 0;  
-    fib[1] = 1;  
-
-    // Calcular los términos de Fibonacci
-    for (int i = 2; i < 14; i++) {
-        fib[i] = fib[i - 1] + fib[i - 2];
-    }
-
-    // Mostrar los resultados
-    printf("Los primeros 14 términos de la secuencia de Fibonacci son:\n");
-    for (int i = 0; i < 14; i++) {
-        printf("%d ", fib[i]);
-    }
-    printf("\n");
-
-    return 0;
-}
